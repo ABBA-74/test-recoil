@@ -9,7 +9,7 @@ const TodoList = () => {
   const todoList = useRecoilValue(filteredTodoListState);
 
   return (
-    <>
+    <main>
       <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
@@ -17,7 +17,7 @@ const TodoList = () => {
       {todoList.map((todoItem) => (
         <TodoItem key={todoItem.id} item={todoItem} />
       ))}
-    </>
+    </main>
   );
 };
 

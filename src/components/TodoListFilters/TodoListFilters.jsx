@@ -10,14 +10,14 @@ const TodoListFilters = () => {
   };
 
   return (
-    <>
+    <div className='todoListFiltersWrapper'>
       Filter:
       <select value={filter} onChange={updateFilter}>
         <option value='Show All'>Tout</option>
         <option value='Show Completed'>Terminés</option>
         <option value='Show Uncompleted'>Non-terminés</option>
       </select>
-    </>
+    </div>
   );
 };
 
